@@ -10,7 +10,7 @@ function getDetalle(target) {//He cambiado getDetalle() arriba porque me aparec√
         // }
     }); 
       $.ajax({//Realizamos una petici√≥n ayax con el id de la pelicula
-    url: "https://www.omdbapi.com/?i=" + imdbID + "&apikey=de1c4d44&",
+    url: "https://www.omdbapi.com/?i=" + imdbID + "&apikey=YourApiKey",
     success: function (respuesta) {  
       var titulo = $("#mimodalLabel");
       titulo.html(respuesta.Title);
